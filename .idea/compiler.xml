@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Service_Consumer_16000" />
-        <module name="config-server" />
         <module name="Service_Provider_11000" />
+        <module name="config-server" />
         <module name="Eureka_Server_18000" />
       </profile>
     </annotationProcessing>

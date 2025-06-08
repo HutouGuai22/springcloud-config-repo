@@ -1,6 +1,17 @@
+server:
+  port: 16000
 spring:
   application:
     name: Service_Consumer_16000
   cloud:
     config:
       uri: http://localhost:8888
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: "${spring.cloud.client.ip-address}:${server.port}"
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  client:
+    service-url:
+      defaultZone: "http://eurekaServer18000:18000/eureka/"
