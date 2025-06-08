@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Service_Consumer_16000
+  cloud:
+    config:
+      uri: http://localhost:8888
